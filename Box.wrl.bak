@@ -1,0 +1,119 @@
+#VRML V2.0 utf8
+
+DEF Ground Transform {
+  children Shape {
+    appearance Appearance {
+      texture ImageTexture {
+        url "*sl3dlib/objects/Textures/General/Brick_Small.jpg" 
+      }
+      material Material {
+      }
+    }
+    geometry Box {
+      size 3 0.2 3
+    }
+  }
+}
+DEF Axis_1 Transform {
+  rotation 0 1 0 0
+  children [
+    DEF cyl2 Transform {
+      translation 0 0.96 0
+      rotation 0 0 1 1.57
+      children Shape {
+        appearance Appearance {
+          texture ImageTexture {
+            url "*sl3dlib/objects/Textures/General/Metal_Corrugated.png" 
+          }
+          material Material {
+          }
+        }
+        geometry Cylinder {
+          radius 0.4
+          height 0.4
+        }
+      }
+    }
+    DEF cyl1_axis Transform {
+      translation 0 0.53 0
+      children Shape {
+        appearance Appearance {
+          texture ImageTexture {
+            url "*sl3dlib/objects/Textures/General/Metal.jpg" 
+          }
+          material Material {
+          }
+        }
+        geometry Cylinder {
+          radius 0.05
+          height 0.06
+        }
+      }
+    }
+    DEF Axis_2 Transform {
+      rotation 1 0 0 0
+      center 0 0.96 0
+      children [
+        DEF cyl2_axis Transform {
+          translation 0.45 0.96 0
+          rotation 0 0 1 1.57
+          children Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Cylinder {
+              radius 0.05
+              height 0.5
+            }
+          }
+        }
+        DEF ROD Transform {
+          translation 0.75 0.96 -0.45
+          children Shape {
+            appearance Appearance {
+              material Material {
+              }
+            }
+            geometry Box {
+              size 0.1 0.1 1
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+DEF Cyl1 Transform {
+  translation 0 0.3 0
+  rotation 1 0 0 0
+  children Shape {
+    appearance Appearance {
+      texture ImageTexture {
+        url "*sl3dlib/objects/Textures/General/Metal_Corrugated.png" 
+      }
+      material Material {
+      }
+    }
+    geometry Cylinder {
+      radius 0.4
+      height 0.4
+    }
+  }
+}
+Viewpoint {
+}
+Background {
+  skyColor [
+    0 0 0,
+    0.2 0.2 0.9,
+    0.4 0.8 0.9 
+  ]
+  skyAngle [1.39626, 1.51844]
+  groundColor [
+    0 0 0,
+    0.3 0.6 0.3,
+    0.5 0.9 0.5 
+  ]
+  groundAngle [1.3, 1.5708]
+}
