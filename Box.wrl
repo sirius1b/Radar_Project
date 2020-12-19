@@ -15,9 +15,9 @@ Background {
   groundAngle [1.3, 1.5708]
 }
 DEF Plane Transform {
-  translation 2 100 -2
+  translation 2.99985 4 -43
   scale 0.4 0.4 0.4
-  rotation 0 1 0 0
+  rotation 0 1 0 1.5708
   children Transform {
     children [
       Transform {
@@ -1344,7 +1344,7 @@ DEF Plane Transform {
 DEF Radar Transform {
   children [
     DEF Axis_1 Transform {
-      rotation 0 1 0 0
+      rotation 0 1 0 -0.0568911
       children [
         DEF cyl2 Transform {
           translation 0 0.96 0
@@ -1380,7 +1380,7 @@ DEF Radar Transform {
           }
         }
         DEF Axis_2 Transform {
-          rotation 1 0 0 0
+          rotation 1 0 0 0.0704097
           center 0 0.96 0
           children [
             DEF cyl2_axis Transform {
@@ -1451,4 +1451,14 @@ DEF Radar Transform {
       }
     }
   ]
+}
+DEF TOP2 Viewpoint {
+  description "TOP2"
+  position -4.88329 53.271 4.32748
+  orientation -0.994213 0.0381236 0.100433 1.49421
+}
+DEF Back Viewpoint {
+  description "Back"
+  position 4.74588 1.02038 20.2719
+  orientation -0.0617715 0.99748 0.0348909 0.372158
 }

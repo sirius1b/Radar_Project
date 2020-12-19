@@ -79,8 +79,15 @@ xr = zeros(n,1);
 ref_state = [pi/6;pi/4];
 
 %% Object tracking
-radar_position = [0;0;0] ; % x,y,z
+
+%---------- 2 unit => 17.32m
+%---------- 1 unit => 8.6603
+
+%----- As per real world
 v = 50 ; %m/s
 z = 1e4; %m
-
-
+% Scale for 3D model
+radar_pos = [0;0;0.96] ; % x,y,z ; Values are as per model
+v = v/8.6603;
+z = z/8.6603;
+r = 0.55;
