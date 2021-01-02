@@ -3,7 +3,11 @@
 
 #### Problem Statement/Description
 	
-	Design a target tracking system for a radar in 3-dimensional space. The radar antenna can change its azimuth and elevation angles using two servo motors. The moment of inertia for azimuth and elevation angle controlling motor is 500 kgm 2 and 600 kgm 2 . You have to design the radar system that will track the target automatically.
+	Design a target tracking system for a radar in 3-dimensional space.
+	The radar antenna can change its azimuth and elevation angles using
+	two servo motors. The moment of inertia for azimuth and elevation
+	angle controlling motor is 500 kgm 2 and 600 kgm 2. You have to
+	design the radar system that will track the target automatically.
 
 
 #### Deliverables
@@ -22,7 +26,12 @@
 |Electric Inductance|0.5 H|
 
 #### Obstacle Motion
-    Assume the target is taking a horizontal flight at 10km altitude in a straight line at an arbitrary direction with a constant velocity of 50m/s. Also assume that the tracking system can estimate the position of the target (x, y, z coordinates) accurately. Design a controller which can stair the antenna such that the antenna maintains the Line of Sight with the target.
+    Assume the target is taking a horizontal flight at 10km altitude in
+    a straight line at an arbitrary direction with a constant velocity
+    of 50m/s. Also assume that the tracking system can estimate the
+    position of the target (x, y, z coordinates) accurately. Design a 
+    controller which can stair the antenna such that the antenna
+    maintains the Line of Sight with the target.
 
 <img src="Part_2/3D_Animation.gif">
 
