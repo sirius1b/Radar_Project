@@ -1,5 +1,5 @@
-## Course Project of ECE570, Winter 2020 @ IIITD
-### Group 2: Radar Control
+	This project hosts the matlab + simulink code for plant simulation. Objective was to design a control system for 2D object tracking problem(refer to below statement). System model is based on equation of servo motor, state space equations considered servo angles and their respective Ist/2nd order derivates to be **state vector**. Control strategy was synthesized using feedback linearization and entire simulated in Simulink with the respective animation on V-Realm.
+
 
 #### Problem Statement/Description
 	
@@ -38,6 +38,8 @@
 	Run the "parameters.m" file to load the model parameters into workspace.
 	Then Run Radar_Nonlinear_model.slx to simulate the controller. 
 	VR block is added to visualise the animiation.
+
+Further theoritical and implementation details can be looked in the reports.
 
 ### Documents:
 - [Report First Half](../main/Part_1/CNT_project_report.pdf)
