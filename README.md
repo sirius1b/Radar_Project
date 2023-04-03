@@ -1,4 +1,6 @@
-This project hosts the matlab + simulink code for plant simulation. Objective was to design a control system for 2D object tracking problem(refer to below statement). System model is based on equation of servo motor, state space equations considered servo angles and their respective Ist/2nd order derivates to be **state vector**. Control strategy was synthesized using feedback linearization and entire simulated in Simulink with the respective animation on V-Realm.
+- This project hosts the matlab + simulink code for plant simulation. Objective was to design a control system for 2D object tracking problem(refer to below statement). 
+- System model is based on equation of servo motor, state space equations considered servo angles and their respective Ist/2nd order derivates to be **state vector**. 
+- Control strategy was synthesized using feedback linearization and entire simulated in Simulink with the respective animation on V-Realm.
 
 
 #### Problem Statement/Description
